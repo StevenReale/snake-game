@@ -1,0 +1,2 @@
+1) What order do things run in? Do the update and draw loops run in parallel? How does the DOMContentLoaded function ever finish if when update() is called, update perpetually calls itself? How does the function ever finish such that the DOMContentLoaded function can get to the next line to call draw()?
+2) I'm used to seeing addEventListener() attached to specific elements in the DOM, like, document.addEventListener(). It seems like this isn't necessary, though, based on how you've written this. If it's not attached to a DOM element, what is it attached to?
