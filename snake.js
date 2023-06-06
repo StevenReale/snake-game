@@ -1,3 +1,9 @@
+/**
+*    Code adapted from a lesson/presentation by 
+*    Michael Lambert (linkedin.com/in/michael-lambert-5714044)
+*/
+
+
 let canvas;
 let ctx;
 
