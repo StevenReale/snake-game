@@ -3,6 +3,7 @@
 *    Michael Lambert (linkedin.com/in/michael-lambert-5714044)
 */
 
+const GAME_SPEED = 150;
 
 let canvas;
 let ctx;
@@ -139,7 +140,7 @@ addEventListener('keyup', (event) => {
 });
 
 /**
- * Runs every 100 ms and updates when game starts
+ * Runs on intervals set by GAME_SPEED and updates when game starts
  */
 function update() {
 
@@ -152,7 +153,7 @@ function update() {
         if (keyState.space) {
             gameState.titleScreen = false;
         }
-        setTimeout(update, 150);
+        setTimeout(update, GAME_SPEED);
         return;
     }
 
@@ -224,7 +225,7 @@ function update() {
         }
     }
 
-    setTimeout(update, 150);
+    setTimeout(update, GAME_SPEED);
 }
 
 
